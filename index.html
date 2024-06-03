@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Bijoy - Unicode Converter | বিজয় - ইউনিকোড কনভার্টার</title>
+    <meta name="robots" content="index, follow">
+    <meta name="Title" content="Bangla Unicode Convertor;">
+    <meta name="keywords" content="Bangla converter, bijoy to Unicode">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="contener">
+        <div class="culams">
+            <div>
+                <div class="mian-text">
+                    <h1>Bangla Converter</h1>
+                    <p>ANSI to Uniciode Text Converter</p>
+                </div>
+                <article>
+                    <div id="textarea">
+                        <textarea class="unicode_textarea" id="EDT" name="textarea" autofocus="autofocus" value=""
+                            placeholder="ইউনিকোড কি-বোর্ডের লেখা এখানে পেস্ট করুন"></textarea>
+                    </div>
+
+                    <div class="convert_button_left">
+                        <button class="bijoy_button" onclick="ConvertToTextArea(&#39;CONVERTEDT&#39;);" type="button"
+                            value="ইউনিকোড থেকে বিজয়" name="ConvertToAsciiButton"><i
+                                class="fas fa-sort-amount-down-alt"> ইউনিকোড থেকে বিজয়</button></i>
+                        <button class="unicode_button" onclick="ConvertFromTextArea(&#39;CONVERTEDT&#39;);"
+                            type="button" value="বিজয় থেকে ইউনিকোড" name="ConvertButton"><i
+                                class="fas fa-sort-amount-up-alt"> বিজয় থেকে ইউনিকোড</button></i>
+                        <button class="reset_button" type="button" value="মুছে ফেলুন" onclick="ClearInput()"><i
+                                class="fas fa-sync-alt"> মুছে ফেলুন</button></i>
+                    </div>
+
+                    <div class="input-file">
+                        <input readonly="" type="hidden" name="CharsTyped" size="2"
+                            style="font-weight:bold; border: 0px solid #2D69AE; color:#808080; text-align:left;"
+                            value="0">
+                        <input readonly="" type="hidden" name="WordsTyped" size="3"
+                            style="font-weight:bold; border: 1px solid #2D69AE; color:#808080; text-align:right;"
+                            value="0">
+                        <input readonly="" type="hidden" name="CharsLeft" size="8" value="100000">
+                        <input readonly="" type="hidden" name="WordsLeft" size="8" value="100000">
+                    </div>
+
+                    <div id="textarea" class="font-ansi">
+                        <textarea class="bijoy_textarea" id="CONVERTEDT" autofocus="autofocus" value=""
+                            placeholder="বিজয় কি-বোর্ডের লেখা এখানে পেস্ট করুন"
+                            style=" font-family:SutonnyMJ"></textarea>
+                    </div>
+
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
